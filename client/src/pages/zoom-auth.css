@@ -1,0 +1,372 @@
+.zoomAuthPage {
+  min-height: 100vh;
+  background: #fff;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+}
+
+/* Top bar */
+.zoomTopBar {
+  height: 64px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+.zoomTopInner {
+  width: 100%;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.zoomLogoText {
+  font-weight: 900;
+  font-size: 26px;
+  letter-spacing: 0.5px;
+  color: #0b5cff;
+}
+
+.zoomTopLinks {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.zoomMuted {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 13px;
+}
+
+.zoomTopLink {
+  color: #0b5cff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.zoomTopLink:hover {
+  text-decoration: underline;
+}
+
+.zoomTopLinkBtn {
+  border: 0;
+  background: transparent;
+  color: #0b5cff;
+  font-weight: 700;
+  padding: 0;
+}
+
+.zoomLang {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.zoomCaret {
+  opacity: 0.7;
+}
+
+/* Main shell */
+.zoomAuthMain {
+  padding: 28px 0 48px;
+}
+
+.zoomShell {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.zoomLeftPane {
+  background: #f5f7fb;
+  padding: 28px;
+  display: grid;
+  place-items: center;
+}
+
+/* Left promo card with open image */
+.zoomLeftCard {
+  width: min(520px, 100%);
+  height: 360px;
+  border-radius: 12px;
+  padding: 28px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.18);
+  background-image:
+    radial-gradient(900px 400px at 20% 20%, rgba(11, 92, 255, 0.25), transparent 55%),
+    radial-gradient(700px 350px at 90% 10%, rgba(0, 255, 209, 0.18), transparent 60%),
+    linear-gradient(135deg, rgba(10, 18, 54, 0.95), rgba(16, 22, 62, 0.88)),
+    url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.zoomLeftCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 16, 58, 0.55), rgba(7, 16, 58, 0.65));
+}
+
+.zoomLeftCard > * {
+  position: relative;
+  z-index: 2;
+}
+
+.zoomLeftBadge {
+  font-weight: 900;
+  opacity: 0.9;
+  text-transform: lowercase;
+}
+
+.zoomLeftTitle {
+  margin-top: 18px;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 1.05;
+}
+
+.zoomAccent {
+  color: #15e0ff;
+}
+
+.zoomLeftSub {
+  margin-top: 10px;
+  font-weight: 800;
+  opacity: 0.95;
+}
+
+.zoomLeftCopy {
+  margin-top: 18px;
+  max-width: 340px;
+  font-weight: 800;
+  opacity: 0.92;
+}
+
+.zoomCtaBtn {
+  margin-top: 22px;
+  height: 46px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: #00d0ff;
+  color: #07103a;
+  border: none;
+  font-weight: 900;
+}
+
+.zoomRightPane {
+  padding: 36px 24px;
+  display: grid;
+  place-items: center;
+}
+
+.zoomFormWrap {
+  width: min(460px, 100%);
+}
+
+.zoomH1 {
+  font-weight: 900;
+  font-size: 48px;
+  letter-spacing: -0.7px;
+  color: #07103a;
+  margin: 0;
+}
+
+.zoomError {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 0, 0, 0.06);
+  border: 1px solid rgba(255, 0, 0, 0.22);
+  color: #7a0b0b;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* mode row */
+.zoomModeRow {
+  margin-top: 18px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  background: rgba(0, 0, 0, 0.02);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.zoomModeTitle {
+  font-weight: 900;
+  color: #07103a;
+  font-size: 13px;
+}
+
+.zoomModeSub {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.55);
+  font-weight: 700;
+}
+
+.zoomModeBtn {
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background: #fff;
+  font-weight: 900;
+  color: #07103a;
+}
+
+.zoomForm {
+  margin-top: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.zoomInput {
+  height: 54px;
+  border-radius: 14px;
+  border: 2px solid rgba(11, 92, 255, 0.35);
+  padding: 0 14px;
+  font-weight: 700;
+  outline: none;
+}
+
+.zoomInput:focus {
+  border-color: rgba(11, 92, 255, 0.65);
+  box-shadow: 0 0 0 4px rgba(11, 92, 255, 0.15);
+}
+
+.zoomPrimaryBtn {
+  height: 54px;
+  border-radius: 14px;
+  border: none;
+  background: #0b5cff;
+  color: #fff;
+  font-weight: 900;
+}
+
+.zoomPrimaryBtn:disabled {
+  opacity: 0.55;
+}
+
+.zoomPrimaryBtn:hover:not(:disabled) {
+  background: #094fe0;
+}
+
+.zoomDivider {
+  margin: 18px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(0, 0, 0, 0.55);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.zoomDivider::before,
+.zoomDivider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.zoomSocialRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.zoomSocialBtn {
+  width: 86px;
+  height: 78px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  background: #fff;
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  font-weight: 900;
+  color: #07103a;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+}
+
+.zoomSocialBtn span {
+  font-size: 12px;
+  font-weight: 900;
+  opacity: 0.7;
+}
+
+.zoomSecondaryBtn {
+  margin-top: 16px;
+  height: 50px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  font-weight: 900;
+}
+
+.zoomSecondaryBtn:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.zoomFooterLinks {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.zoomFooterLinks button {
+  border: 0;
+  background: transparent;
+  color: #0b5cff;
+  font-weight: 800;
+}
+
+.zoomFooterLinks button:hover {
+  text-decoration: underline;
+}
+
+.zoomCaptchaNote {
+  margin-top: 12px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.zoomCreateAcc {
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.zoomLink {
+  color: #0b5cff;
+  text-decoration: none;
+}
+
+.zoomLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .zoomShell {
+    grid-template-columns: 1fr;
+  }
+  .zoomLeftCard {
+    height: 280px;
+  }
+  .zoomH1 {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,63 @@
+.welcome-wrap{
+  min-height:100vh;
+  background:#07070c;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:64px;
+}
+
+.welcome-title{
+  color:#fff;
+  font-size:56px;
+  font-weight:800;
+  margin:0;
+}
+
+.accent{ color:#ff8a00; }
+
+.welcome-sub{
+  color:#c9c9d2;
+  font-size:20px;
+  margin-top:14px;
+}
+
+.welcome-btn{
+  margin-top:24px;
+  background:#ff8a00;
+  color:#fff;
+  border:none;
+  padding:14px 22px;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.welcome-right{
+  position:relative;
+  width:520px;
+  height:380px;
+}
+
+.phone{
+  position:absolute;
+  width:220px;
+  height:340px;
+  border-radius:24px;
+  object-fit:cover;
+  box-shadow:0 20px 80px rgba(0,0,0,.6);
+}
+
+
+.phone-a{
+  right:140px;
+  top:40px;
+  transform:rotate(-10deg);
+}
+
+.phone-b{
+  right:0;
+  top:70px;
+  transform:rotate(8deg);
+}
