@@ -35,7 +35,8 @@ export default function Room() {
   const ignoreOfferRef = useRef(new Map());
   const politeRef = useRef(new Map());
 
-  const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || "http://localhost:5000";
+ const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || "https://zoom-app-jzip.onrender.com";
+
 
   // get mic/cam
   useEffect(() => {
